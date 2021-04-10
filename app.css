@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: small;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    background-color: white;
+}
+
+.wrapper {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 590px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px #ebf0fa;
+    overflow: hidden;
+}
+
+.wrapper:before {
+    content: url('https://i.ibb.co/r0tmqw7/2.jpg');
+    width: 50%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+}
+
+.wrapper h2 {
+    padding: 3rem 0rem 1rem 0rem;
+    margin-left: auto;
+    margin-right: 3rem;
+    z-index: 100;
+    position: relative;
+    top: 15rem;
+    color: white;
+    font-size: large;
+}
+
+form {
+    padding-left: 1rem;
+    position: relative;
+    top: -2rem;
+    width: 50%;
+    padding-left: 3rem;
+    margin-right: auto;
+    padding-bottom: 2rem;
+    background-color: white;
+
+}
+
+h4 {
+    padding-top: 1rem;
+}
+
+.input-group {
+    margin: 1rem 0px;
+}
+
+.input-box {
+    width: 250px;
+    align-items: center;
+}
+
+i {
+    position: relative;
+    color: hsla(217, 100%, 50%, 1);
+}
+
+[class='fa fa-user icon'] {
+    left: -20px;
+}
+
+[class='dob'] {
+    width: 53px;
+}
+
+input {
+    width: 170px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid hsla(217, 100%, 50%, 1);
+}
+
+input:hover {
+    border-bottom: 2px solid hsla(100, 100%, 50%, 1);
+}
+
+input:focus {
+    outline-width: 0px;
+}
+
+[class='fa fa-envelope'] {
+    left: -22px;
+}
+
+.radio {
+    width: 15px;
+    margin-right: 5px;
+}
+
+[class="fa fa-user icon"] {
+    margin-bottom: 1rem;
+}
+
+[class="fa fa-credit-card icon"] {
+    position: relative;
+    left: -22px;
+}
+
+select {
+    width: 6.4rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid hsla(217, 100%, 50%, 1);
+    margin-top: .5rem;
+    color: #777;
+}
+
+button {
+    width: 170px;
+    height: 40px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsla(217, 100%, 50%, 1);
+    box-shadow: 0px 0px 5px 3px #ddd;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px 5px #ddd;
+}
+
+@media only screen and (max-width:560px) {
+    body {
+        background: url('https://i.ibb.co/r0tmqw7/2.jpg');
+    }
+
+    .wrapper {
+        align-items: center;
+        margin-top: 0rem;
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        opacity: 0.91;
+        overflow: hidden;
+    }
+
+    .wrapper:before {
+        display: none;
+    }
+
+    .wrapper h2 {
+        margin-bottom: 4rem;
+        margin-left: 3rem;
+        padding-bottom: 3rem;
+        top: 0rem;
+        color: white;
+        background-color: hsl(217, 70%, 40%, 1);
+        width: 100%;
+        text-align: center;
+    }
+
+    form {
+        margin: auto;
+        width: 90%;
+
+    }
+
+    form > h4 {
+        text-align: left;
+        margin-top: -20px;
+    }
+
+    input {
+        width: 90%;
+        margin-top: 10px;
+        padding-right: 1.5rem;
+    }
+
+    .input-group {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .input-box {
+        width: 100%;
+        align-items: center;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    [class='dob'] {
+        width: 29%;
+    }
+
+    button {
+        width: 90%;
+        height: 40px;
+    }
+
+    select {
+        width: 44.5%;
+    }
+}
